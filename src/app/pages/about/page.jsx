@@ -1,9 +1,16 @@
-import React from 'react'
+import AboutBanner from "@/components/about/AboutBanner";
+import FeatureCards from "@/components/about/FeatureCards";
+import HighlightSection from "@/components/about/HighlightSection";
+import React from "react";
 
-const AboutPage = () => {
+const About = () => {
   return (
-    <div>AboutPage</div>
-  )
-}
+   <div>
+     <AboutBanner></AboutBanner>
+    <HighlightSection></HighlightSection>
+    <FeatureCards></FeatureCards>
+   </div>
+  );
+};
 
-export default AboutPage
+export default About;

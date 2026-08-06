@@ -57,6 +57,25 @@ const galleryData = [
   },
 ];
 
+const statistics = [
+  {
+    value: "6+",
+    label: "Specialized learning pathways",
+  },
+  {
+    value: "4+",
+    label: "Core certified program areas",
+  },
+  {
+    value: "8+",
+    label: "Engineering service domains",
+  },
+  {
+    value: "360°",
+    label: "Training-to-industry ecosystem",
+  },
+];
+
 export default function LearningGallery() {
   const [activeIdx, setActiveIdx] = useState(0);
 
@@ -72,7 +91,7 @@ export default function LearningGallery() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 space-y-4">
       
       {/* ================= SECTION HEADER ================= */}
       <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -225,6 +244,29 @@ export default function LearningGallery() {
   </button>
  </Link>
 </div>
+
+<div className="w-full bg-[#B31919] text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20">
+        {statistics.map((stat, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center text-center p-6 transition-transform duration-200 hover:scale-105"
+          >
+            {/* Number/Value */}
+            <h3 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-3">
+              {stat.value}
+            </h3>
+
+            {/* Label */}
+            <p className="text-xs sm:text-sm font-bold tracking-wide text-white/90 max-w-[200px] leading-snug">
+              {stat.label}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
     </section>
+
+    
   );
 }
