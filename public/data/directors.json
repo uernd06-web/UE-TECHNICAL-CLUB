@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Rafat Bin Ali",
+    "role": "Chief Program Officer (CPO)",
+    "image":"/ceo-Sir.png",
+    "description": "Responsible for academic program strategy, curriculum planning, professional training pathways and long-term program development.",
+    "mainResponsibilities": [
+      "Program and curriculum development",
+      "Academic quality management",
+      "Professional training strategy",
+      "Industry-focused learning pathways"
+    ],
+    "tag": "Program architecture"
+  },
+  {
+    "id": 2,
+    "name": "Engr Fahim Shahrier Khan",
+    "role": "Chief Technology Officer (CTO)",
+    "image":"/Engr Fahim Shahrier Khan (2).png",
+    "description": "Responsible for technical infrastructure, digital learning platforms, engineering technology and innovation strategy.",
+    "mainResponsibilities": [
+      "Technology strategy",
+      "Digital learning systems",
+      "Engineering platform development",
+      "Technical research and innovation"
+    ],
+    "tag": "Learning technology"
+  },
+  {
+    "id": 3,
+    "name": "Engr Sayed Bin Osman",
+    "role": "Chief Operating Officer (COO)",
+    "image":"/Engr. Sayed Bin Osman.jpg",
+    "description": "Responsible for daily operations, organizational coordination, resource management and operational excellence.",
+    "mainResponsibilities": [
+      "Daily operational management",
+      "Team and resource coordination",
+      "Process improvement",
+      "Administrative supervision"
+    ],
+    "tag": "Operations"
+  }
+]

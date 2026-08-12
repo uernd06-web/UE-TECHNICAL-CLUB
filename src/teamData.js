@@ -1,0 +1,173 @@
+export const MEMBERS = {
+  rafat: { id: 'rafat', name: 'Engr. Sheikh Rafat Bin Ali', role: 'Chairman', image: '/images/rafat.png' },
+  fahim: { id: 'fahim', name: 'Engr. Fahim Shahrier Khan', role: 'CPO', image: '/images/fahim.png' },
+  sayed: { id: 'sayed', name: 'Engr. Sayed Bin Osman', role: 'Chief R&D Officer', image: '/images/sayed.jpg' },
+  nowshad: { id: 'nowshad', name: 'Engr. Nowshad Amin', role: 'Chief Advisor', image: '/images/nowshad.jpg' },
+  zahroul: { id: 'zahroul', name: 'Engr. Zahroul Haque Miah', role: 'COO', image: '/images/zahroul.jpg' },
+  fakir: { id: 'fakir', name: 'Engr. Fakir Sharif', role: 'Designation', image: '/images/fakir.jpg' },
+  asif: { id: 'asif', name: 'Engr. Asif Mahmud', role: 'Sr. Service Engineer', image: '/images/asif.jpg' },
+  shakil: { id: 'shakil', name: 'Engr. Shakil Ahmed', role: 'TDO', image: '/images/shakil.jpg' },
+  ratin: { id: 'ratin', name: 'Engr. Ratin', role: 'Business Dev Officer', image: '/images/ratin.jpg' },
+  sobuj: { id: 'sobuj', name: 'Engr. Sobuj', role: 'Gazipur Branch Head', image: '/images/sobuj.jpg' },
+
+  mentorAsif: { id: 'mentorAsif', name: 'Engr. Asif', role: 'Automation Mentor', image: '/images/asif-mentor.jpg' },
+  robiul: { id: 'robiul', name: 'Engr. Robiul Hossen', role: 'SCADA Mentor', image: '/images/robiul.jpg' },
+  ibrahim: { id: 'ibrahim', name: 'Engr. Ibrahim Khalil', role: 'BMS Mentor', image: '/images/ibrahim.jpg' },
+  luthfar: { id: 'luthfar', name: 'Engr. Luthfar Rahman', role: 'Solar & Power Mentor', image: '/images/luthfar.jpg' },
+  shahadat: { id: 'shahadat', name: 'Engr. Shahadat', role: 'Automation Mentor', image: '/images/shahadat.jpg' },
+  mostafa: { id: 'mostafa', name: 'Eng. Mostafa', role: 'Automation Mentor', image: '/images/mostafa.jpg' },
+
+  sabiha: { id: 'sabiha', name: 'Engr. Sabiha', role: 'Marketing Executive', image: '/images/sabiha.jpg' },
+  rayhan: { id: 'rayhan', name: 'Engr. Rayhan', role: 'Marketing Executive', image: '/images/rayhan.jpg' },
+  odhora: { id: 'odhora', name: 'Engr. Odhora', role: 'Marketing Executive', image: '/images/odhora.jpg' },
+  sara: { id: 'sara', name: 'Engr. Sara', role: 'Marketing Executive', image: '/images/sara.jpg' },
+
+  roman: { id: 'roman', name: 'Roman Ahmed', role: 'MISSION-121', image: '/images/roman.jpg' },
+  apurba: { id: 'apurba', name: 'Apurba Sarker', role: 'MISSION-121', image: '/images/apurba.jpg' },
+  safayet: { id: 'safayet', name: 'Md. Safayet Hosen', role: 'MISSION-121', image: '/images/safayet.jpg' },
+  sagor: { id: 'sagor', name: 'Sagor Chandra Sutradhar', role: 'Intern', image: '/images/sagor.jpg' },
+  bijoy: { id: 'bijoy', name: 'Bijoy Das', role: 'Intern', image: '/images/bijoy.jpg' },
+  montasir: { id: 'montasir', name: 'Montasir Hasan', role: 'Intern', image: '/images/montasir.jpg' },
+  jabed: { id: 'jabed', name: 'Jabed Hossain', role: 'Intern', image: '/images/jabed.jpg' },
+  mahbub: { id: 'mahbub', name: 'Md. Mahbub Ahmed', role: 'Intern', image: '/images/mahbub.jpg' },
+};
+
+export const ORGANOGRAM_CHARTS = {
+  boardOfDirectors: {
+    title: 'Board of Directors',
+    nodes: [
+      { id: '1', type: 'member', data: MEMBERS.rafat },
+      { id: '2', type: 'member', data: MEMBERS.fahim },
+      { id: '3', type: 'member', data: MEMBERS.sayed },
+      { id: 'sec-advisor', type: 'section', data: { label: 'Advisor Panel' } },
+      { id: '4', type: 'member', data: MEMBERS.nowshad },
+      { id: '5', type: 'member', data: MEMBERS.rafat },
+      { id: '6', type: 'member', data: MEMBERS.zahroul },
+      { id: '7', type: 'member', data: MEMBERS.fakir },
+      { id: '8', type: 'member', data: MEMBERS.sayed },
+      { id: '9', type: 'member', data: MEMBERS.asif },
+    ],
+    edges: [
+      { id: 'e1-2', source: '1', target: '2' },
+      { id: 'e1-3', source: '1', target: '3' },
+      { id: 'e2-sec', source: '2', target: 'sec-advisor' },
+      { id: 'e2-4', source: '2', target: '4' },
+      { id: 'e1-5', source: '1', target: '5' },
+      { id: 'e3-6', source: '3', target: '6' },
+      { id: 'e4-7', source: '4', target: '7' },
+      { id: 'e5-8', source: '5', target: '8' },
+      { id: 'e6-9', source: '6', target: '9' },
+    ]
+  },
+
+  executiveTeam: {
+    title: 'Executive Team',
+    nodes: [
+      { id: '1', type: 'member', data: { ...MEMBERS.rafat, role: 'CEO' } },
+      { id: 'sec-advisor', type: 'section', data: { label: 'Advisor Panel' } },
+      { id: 'sec-bod', type: 'section', data: { label: 'Board of Directors' } },
+      { id: '2', type: 'member', data: MEMBERS.zahroul },
+      { id: '3', type: 'member', data: MEMBERS.fahim },
+      { id: '4', type: 'member', data: MEMBERS.sayed },
+      { id: '5', type: 'member', data: MEMBERS.shakil },
+      { id: '6', type: 'member', data: MEMBERS.ratin },
+      { id: '7', type: 'member', data: MEMBERS.asif },
+      { id: '8', type: 'member', data: MEMBERS.rafat },
+      { id: '9', type: 'member', data: MEMBERS.zahroul },
+    ],
+    edges: [
+      { id: 'e1-sec1', source: '1', target: 'sec-advisor' },
+      { id: 'e1-sec2', source: '1', target: 'sec-bod' },
+      { id: 'e1-4', source: '1', target: '4' },
+      { id: 'e4-2', source: '4', target: '2' },
+      { id: 'e4-3', source: '4', target: '3' },
+      { id: 'e4-5', source: '4', target: '5' },
+      { id: 'e4-6', source: '4', target: '6' },
+      { id: 'e3-7', source: '3', target: '7' },
+      { id: 'e4-8', source: '4', target: '8' },
+      { id: 'e5-9', source: '5', target: '9' },
+    ]
+  },
+
+  trainingDivision: {
+    title: 'Training Division',
+    nodes: [
+      { id: '1', type: 'member', data: MEMBERS.zahroul },
+      { id: '2', type: 'member', data: MEMBERS.rafat },
+      { id: 'b1', type: 'section', data: { label: 'Dhaka Branch' } },
+      { id: 'b2', type: 'section', data: { label: 'Chattogram Branch' } },
+      { id: 'b3', type: 'section', data: { label: 'Gazipur Branch' } },
+      { id: 'b4', type: 'section', data: { label: 'Saudi Arabia Branch' } },
+      { id: '3', type: 'member', data: MEMBERS.shakil },
+      { id: '4', type: 'member', data: MEMBERS.sobuj },
+      { id: '5', type: 'member', data: { ...MEMBERS.rafat, role: 'CEO' } },
+      { id: 'm1', type: 'member', data: MEMBERS.mentorAsif },
+      { id: 'm2', type: 'member', data: MEMBERS.robiul },
+      { id: 'm3', type: 'member', data: MEMBERS.ibrahim },
+      { id: 'm4', type: 'member', data: MEMBERS.luthfar },
+      { id: 'm5', type: 'member', data: MEMBERS.shahadat },
+      { id: 'm6', type: 'member', data: MEMBERS.mostafa },
+    ],
+    edges: [
+      { id: 'e1-b1', source: '1', target: 'b1' },
+      { id: 'e1-b2', source: '1', target: 'b2' },
+      { id: 'e2-b3', source: '2', target: 'b3' },
+      { id: 'e2-b4', source: '2', target: 'b4' },
+      { id: 'eb1-3', source: 'b1', target: '3' },
+      { id: 'eb3-4', source: 'b3', target: '4' },
+      { id: 'eb4-5', source: 'b4', target: '5' },
+      { id: 'e3-m1', source: '3', target: 'm1' },
+      { id: 'e3-m2', source: '3', target: 'm2' },
+      { id: 'e3-m3', source: '3', target: 'm3' },
+      { id: 'e3-m4', source: '3', target: 'm4' },
+      { id: 'e4-m5', source: '4', target: 'm5' },
+      { id: 'e4-m6', source: '4', target: 'm6' },
+    ]
+  },
+
+  marketingTeam: {
+    title: 'Marketing Team',
+    nodes: [
+      { id: '1', type: 'member', data: { ...MEMBERS.rafat, role: 'CEO' } },
+      { id: '2', type: 'member', data: MEMBERS.shakil },
+      { id: '3', type: 'member', data: MEMBERS.zahroul },
+      { id: '4', type: 'member', data: MEMBERS.sabiha },
+      { id: '5', type: 'member', data: MEMBERS.rayhan },
+      { id: '6', type: 'member', data: MEMBERS.odhora },
+      { id: '7', type: 'member', data: MEMBERS.sara },
+    ],
+    edges: [
+      { id: 'e1-2', source: '1', target: '2' },
+      { id: 'e1-3', source: '1', target: '3' },
+      { id: 'e2-4', source: '2', target: '4' },
+      { id: 'e2-5', source: '2', target: '5' },
+      { id: 'e3-6', source: '3', target: '6' },
+      { id: 'e3-7', source: '3', target: '7' },
+    ]
+  },
+
+  internTeam: {
+    title: 'Intern Team',
+    nodes: [
+      { id: 'zahroul', type: 'member', data: MEMBERS.zahroul },
+      { id: 'intern-1', type: 'member', data: MEMBERS.roman },
+      { id: 'intern-2', type: 'member', data: MEMBERS.apurba },
+      { id: 'intern-3', type: 'member', data: MEMBERS.safayet },
+      { id: 'intern-4', type: 'member', data: MEMBERS.sagor },
+      { id: 'intern-5', type: 'member', data: MEMBERS.bijoy },
+      { id: 'intern-6', type: 'member', data: MEMBERS.montasir },
+      { id: 'intern-7', type: 'member', data: MEMBERS.jabed },
+      { id: 'intern-8', type: 'member', data: MEMBERS.mahbub },
+    ],
+    edges: [
+      { id: 'e-z-i1', source: 'zahroul', target: 'intern-1' },
+      { id: 'e-z-i2', source: 'zahroul', target: 'intern-2' },
+      { id: 'e-z-i3', source: 'zahroul', target: 'intern-3' },
+      { id: 'e-z-i4', source: 'zahroul', target: 'intern-4' },
+      { id: 'e-z-i5', source: 'zahroul', target: 'intern-5' },
+      { id: 'e-z-i6', source: 'zahroul', target: 'intern-6' },
+      { id: 'e-z-i7', source: 'zahroul', target: 'intern-7' },
+      { id: 'e-z-i8', source: 'zahroul', target: 'intern-8' },
+    ]
+  }
+};

@@ -1,8 +1,19 @@
 import React from 'react'
-
-const Success = () => {
+import path from 'path'
+import fs from 'fs/promises'
+import SuccessBanner from '@/components/success/SuccessBanner'
+import SuccessSection from '@/components/success/SuccessSection'
+const Success =async () => {
+  const filePath = path.join(process.cwd(), 'public', 'data', 'successStory.json')
+const jsonData= await fs.readFile(filePath, 'utf-8')
+const stories = JSON.parse(jsonData)
+console.log(stories, 'from alumni')
   return (
-    <div>Success</div>
+    <div>
+
+ <SuccessBanner></SuccessBanner>
+      <SuccessSection stories={stories}></SuccessSection>
+    </div>
   )
 }
 
