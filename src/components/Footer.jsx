@@ -1,79 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  const navItems = [
-    { name: "HOME", path: "/" },
-    { name: "ABOUT", path: "/pages/about" },
-    { name: "CERTIFICATION", path: "/pages/certification" },
-    {
-      name: "PROGRAMS",
-      dropdown: [
-        {
-          name: "UE CLUB",
-          description: "Membership learning ecosystem",
-          path: "/pages/programs/ue-club",
-        },
-        {
-          name: "MEMBERSHIPS",
-          description: "Explore every club tier",
-          path: "/pages/programs/memberships",
-        },
-        {
-          name: "ADMISSION",
-          description: "Eligibility and enrollment",
-          path: "/pages/programs/admission",
-        },
-        {
-          name: "ONLAB",
-          description: "Hands-on practical learning",
-          path: "/pages/programs/onlab",
-        },
-      ],
-    },
-    {
-      name: "ADMINISTRATION",
-      dropdown: [
-        {
-          name: "BOARD OF DIRECTORS",
-          description: "Executive governance and leadership",
-          path: "/pages/administration/board-of-directors",
-        },
-        {
-          name: "TRAINING DEPARTMENT",
-          description: "Management, trainers and mentors",
-          path: "/pages/administration/training-department",
-        },
-      ],
-    },
-    {
-      name: "COMMUNITY",
-      dropdown: [
-        {
-          name: "OUR ALUMNI",
-          description: "Graduate network and careers",
-          path: "/pages/community/alumni",
-        },
-        {
-          name: "OUR SUCCESS",
-          description: "Member achievement stories",
-          path: "/pages/community/success",
-        },
-        {
-          name: "NGX",
-          description: "Next-generation engineering platform",
-          path: "/pages/community/ngx",
-        },
-        {
-          name: "COMPANIES",
-          description: "Ulterior Engineering ecosystem",
-          path: "/pages/community/companies",
-        },
-      ],
-    },
-  ];
-
-  // Helper arrays for mapping links cleanly
+  // Navigation Links Data
   const exploreLinks = [
     { name: "About", path: "/pages/about" },
     { name: "Certification", path: "/pages/certification" },
@@ -95,23 +25,22 @@ const Footer = () => {
   return (
     <footer className="bg-[#050B14] text-gray-300 font-sans pt-16 pb-8 px-6 md:px-16 border-t border-red-900/40">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
-        {/* Column 1: Brand Info */}
-        <div className="space-y-6">
+        
+        {/* Column 1: Brand Info (Optimized Logo Size) */}
+        <div className="space-y-4">
           <Link href="/" className="inline-block">
-            <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center bg-black text-white font-black text-xl px-2.5 py-1 rounded border border-gray-700">
-                UE
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-bold text-sm tracking-tight text-white">
-                  Technical
-                </span>
-                <span className="font-semibold text-xs tracking-wider text-gray-400">
-                  Club
-                </span>
-              </div>
+            <div className="relative w-20 h-20 md:w-24 md:h-24">
+              <Image
+                src="/ue-logo2.png"
+                alt="UE Logo"
+                fill
+                sizes="(max-width: 768px) 80px, 96px"
+                className="object-contain object-left"
+                priority
+              />
             </div>
           </Link>
+
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
             UETraining is part of the Ulterior Engineering ecosystem, connected
             with UE Energy & Control, NGX and Uthboe.

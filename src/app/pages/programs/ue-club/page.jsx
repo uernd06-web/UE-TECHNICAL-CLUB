@@ -3,7 +3,10 @@ import ClubPhilosophy from '@/components/ueClub/ClubPhilosophy'
 import ExpansionVision from '@/components/ueClub/ExpansionVision'
 import LearningEcosystem from '@/components/ueClub/LearningEcosystem'
 import React from 'react'
-
+export const metadata = {
+  title: "ue club",
+  description: "",
+};
 const UeClub = () => {
   return (
   <div>

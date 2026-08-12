@@ -5,7 +5,10 @@ import AlumniSection from '@/components/alumni/AlumniSection'
 
 import React from 'react'
 
-
+export const metadata = {
+  title: "our alumni",
+  description: "",
+};
 
 
 const OurAlumni = () => {

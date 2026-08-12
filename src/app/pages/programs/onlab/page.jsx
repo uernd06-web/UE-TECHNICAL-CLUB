@@ -4,6 +4,12 @@ import path from 'path'
 import fs from 'fs/promises'
 import React from 'react'
 
+
+export const metadata = {
+  title: "onlab",
+  description: "",
+};
+
 const OnlabPage =async () => {
    const filePath =path.join(process.cwd(), 'public', 'data', 'labData.json')
    const  jsonData = await fs.readFile(filePath, 'utf-8')

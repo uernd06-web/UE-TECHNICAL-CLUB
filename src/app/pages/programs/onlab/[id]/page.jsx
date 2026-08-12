@@ -3,6 +3,12 @@ import path from 'path'
 import fs from 'fs/promises'
 import Image from 'next/image';
 
+
+export const metadata = {
+  title: "onlab details",
+  description: "",
+};
+
 const DetailsPage =async ({params}) => {
 
     const {id}= await params;

@@ -2,6 +2,11 @@ import React from 'react'
 import path from 'path'
 import fs from 'fs/promises'
 
+export const metadata = {
+  title: "success details",
+  description: "",
+};
+
 const SuccessDetails =async ({params}) => {
     const {id}=await params;
     const filePath = path.join(process.cwd(), 'public', 'data' , 'successStory.json')

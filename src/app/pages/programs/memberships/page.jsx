@@ -6,7 +6,14 @@ import ReferralBenefits from '@/components/memberships/ReferralBenefits'
 import ReferralMembership from '@/components/memberships/ReferralMembership'
 import SupportDirectory from '@/components/memberships/SupportDirectory'
 
+
+
 import React from 'react'
+
+export const metadata = {
+  title: "memberships",
+  description: "",
+};
 
 const MembershipsPage = () => {
   return (

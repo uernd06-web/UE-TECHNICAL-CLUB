@@ -102,7 +102,7 @@ const AlumniCard = ({ alumni, index }) => {
 const AlumniSection = ({ data = [] }) => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
-      {/* হেডার */}
+      {/* header*/}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b pb-6">
         <div>
           <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
@@ -113,7 +113,7 @@ const AlumniSection = ({ data = [] }) => {
           </p>
         </div>
         
-        {/* ব্যাজ */}
+        {/* */}
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold text-gray-500">Total Alumni:</span>
           <div className="badge badge-error badge-lg font-bold text-white px-4 py-3">
@@ -122,7 +122,7 @@ const AlumniSection = ({ data = [] }) => {
         </div>
       </div>
 
-      {/* কার্ড লিস্ট (Grid) */}
+      {/* (Grid) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-start">
         {data.map((alumni, index) => (
           <AlumniCard key={alumni.id || index} alumni={alumni} index={index} />
