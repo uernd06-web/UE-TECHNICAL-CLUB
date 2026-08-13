@@ -79,7 +79,7 @@ const MentorsSection = ({ mentors }) => {
 
                     
                  <Link href={`/pages/administration/training-department/${mentor.id}?category=mentor`}>
-                    <button className="bg-gray-900 hover:bg-red-600 text-white font-semibold py-1.5 px-3 sm:py-2 sm:px-3.5 rounded-xl flex items-center justify-center gap-1 transition-colors text-xs shadow-md">
+                    <button className="bg-gray-900 cursor-pointer hover:bg-red-600 text-white font-semibold py-1.5 px-3 sm:py-2 sm:px-3.5 rounded-xl flex items-center justify-center gap-1 transition-colors text-xs shadow-md">
                       <span>View Profile</span>
                       <FiArrowUpRight className="text-sm transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </button>

@@ -47,7 +47,9 @@ const BoardOfDirectors =async () => {
         <SingleOrganogram chartData={ORGANOGRAM_CHARTS.internTeam} />
       </div>
     </div> */}
-<OrgChart></OrgChart>
+{/* <OrgChart></OrgChart> */}
+
+<BoardOfDirectors></BoardOfDirectors>
     </div>
   )
 }
