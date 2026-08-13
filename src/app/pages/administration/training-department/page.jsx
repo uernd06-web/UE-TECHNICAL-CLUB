@@ -5,6 +5,12 @@ import fs from 'fs/promises'
 import TrainingDepartment from '@/components/training-department/TrainingDepartment'
 import MentorsSection from '@/components/training-department/MentorsSection'
 
+export const metaData={
+  title:'training | ulterior engineering',
+  description: ''
+  
+}
+
 const TrainingDepartmentPage = async() => {
 
   const filePath = path.join(process.cwd(), 'public', 'data', 'departmentLeader.json')
