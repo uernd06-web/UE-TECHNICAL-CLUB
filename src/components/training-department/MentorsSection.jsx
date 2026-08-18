@@ -13,14 +13,13 @@ const MentorsSection = ({ mentors }) => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
             <div>
               <span className="text-xs font-bold tracking-widest text-red-600 uppercase mb-2 block">
-                Governance
+               Mentor Network
               </span>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-                Board of Directors
+               Our Engineering Mentors
               </h2>
               <p className="text-sm sm:text-base text-gray-600 mt-1">
-                Select a director card to view the full member profile.
-              </p>
+                Select a mentor card to view the profile, specialization and main responsibilities.</p>
             </div>
 
             {/* Badge Count */}

@@ -1,3 +1,4 @@
+import ContactMap from '@/components/contact/ContactMap';
 import ContactPage from '@/components/contact/ContactPage'
 import React from 'react'
 
@@ -10,6 +11,7 @@ const Contact = () => {
   return (
     <div>
 <ContactPage></ContactPage>
+<ContactMap></ContactMap>
     </div>
   )
 }

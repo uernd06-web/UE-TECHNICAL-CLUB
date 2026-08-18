@@ -1,14 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiArrowLeft, FiCheckCircle, FiBriefcase, FiAward, FiUserCheck, FiTarget } from 'react-icons/fi';
+import { FiArrowLeft, FiCheckCircle, FiBriefcase, FiAward, FiUserCheck } from 'react-icons/fi';
 
 const TrainerDetailCard = ({ trainer }) => {
   if (!trainer) return null;
 
-  // 1. dynamic badge/tag নির্ধারণ (Mentor এর category/specialty অথবা Leader এর tag/badge)
-  const tagText = trainer.tag || trainer.category || 'MEMBER PROFILE';
+  // 1. Dynamic Tag & Badge Selection
+  const tagText = trainer.tag || trainer.category || (trainer.departments && trainer.departments[0]) || 'MEMBER PROFILE';
   const badgeText = trainer.badge || trainer.specialty;
+
+  // 2. Handle Bio / Description Fallback
+  const descriptionText = trainer.description || trainer.bio || 'No description available.';
 
   return (
     <div className="bg-slate-50 min-h-screen pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
@@ -16,25 +19,25 @@ const TrainerDetailCard = ({ trainer }) => {
         
         {/* Back Button */}
         <Link
-          href="/"
+          href="/pages/administration/training-department"
           className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-red-600 mb-6 sm:mb-8 transition-colors group"
         >
           <FiArrowLeft className="transition-transform group-hover:-translate-x-1" />
-          <span>Back to All Members</span>
+          <span>Back To All Members</span>
         </Link>
 
         {/* Main Card Grid */}
         <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12">
           
-          {/* 👈 LEFT SIDE: Image Section */}
+          {/* LEFT SIDE: Image Section */}
           <div className="lg:col-span-5 bg-slate-950 relative w-full aspect-[4/4.5] sm:aspect-[4/3.5] lg:aspect-auto lg:min-h-[520px] flex items-center justify-center overflow-hidden">
             
-            {/* Tag / Category Badge over Image */}
+            {/* Tag / Category Badge */}
             <div className="absolute top-4 left-4 z-10 bg-red-600/90 backdrop-blur-md text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase px-3 py-1.5 rounded-full border border-red-500/30 shadow-md">
               {tagText}
             </div>
 
-            {/* Initials Badge (যদি Mentor এর initials থাকে) */}
+            {/* Initials Badge */}
             {trainer.initials && (
               <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-md border border-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full">
                 {trainer.initials}
@@ -44,8 +47,8 @@ const TrainerDetailCard = ({ trainer }) => {
             {/* Profile Image */}
             <div className="relative w-full h-full">
               <Image
-                src={trainer.image}
-                alt={trainer.name}
+                src={trainer.image || '/placeholder.png'}
+                alt={trainer.name || 'Member Profile'}
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
@@ -57,7 +60,7 @@ const TrainerDetailCard = ({ trainer }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
           </div>
 
-          {/* 👉 RIGHT SIDE: Content Details */}
+          {/* RIGHT SIDE: Content Details */}
           <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-8">
             
             <div className="space-y-4">
@@ -81,9 +84,9 @@ const TrainerDetailCard = ({ trainer }) => {
                 </p>
               </div>
 
-              {/* Description */}
+              {/* Description / Bio */}
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed pt-2">
-                {trainer.description}
+                {descriptionText}
               </p>
             </div>
 

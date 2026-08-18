@@ -29,8 +29,12 @@ export default function RootLayout({ children }) {
       <body className="">
        <SmoothScroll>
 
+         
          <Navbar></Navbar>
+         <main className="">
+
         {children}
+         </main>
         <Footer></Footer>
        </SmoothScroll>
         </body>

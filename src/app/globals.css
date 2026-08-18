@@ -19,3 +19,57 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+/* Organogram Arrow Custom Styling */
+/* Organogram Line & Arrow Structure Styling */
+.org-chart-tree ul {
+  position: relative;
+  padding-top: 20px !important;
+}
+
+/* 1. Parent Node - Downward arrow setup */
+.org-chart-tree > ul > li > div:first-child,
+.org-chart-tree li > div:first-child {
+  position: relative;
+}
+
+/* Vertical line coming out from the parent node */
+.org-chart-tree li > div:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 16px;
+  background-color: #ffffff; /* সাদা বা আপনার পছন্দের লাইন কালার */
+  z-index: 1;
+}
+
+/* Arrowhead right below the parent's vertical line */
+.org-chart-tree li > div:first-child::before {
+  content: '';
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #ffffff; /* Arrowhead color */
+  z-index: 2;
+}
+
+/* Hide arrow for leaf nodes (nodes with no children) */
+.org-chart-tree li:only-child > div:first-child::after,
+.org-chart-tree li:only-child > div:first-child::before,
+.org-chart-tree li:not(:has(ul)) > div:first-child::after,
+.org-chart-tree li:not(:has(ul)) > div:first-child::before {
+  display: none !important;
+}
+
+/* 2. Connecting Lines for Children */
+.org-chart-tree li::before, 
+.org-chart-tree li::after {
+  border-color: #ffffff !important; /* Connecting horizontal grid lines */
+}
