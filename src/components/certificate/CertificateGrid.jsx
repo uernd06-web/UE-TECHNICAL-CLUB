@@ -12,7 +12,7 @@ const certificationData = [
     issuer: "International Organization for Standardization",
     regNo: "ISO-REG-2026-9901",
     validity: "Valid & Active",
-    image: "/images/iso-certificate.jpg",
+    image: "/ISO Certificate.png",
     features: [
       "Educational Organizations Management System (EOMS)",
       "International benchmark for technical training quality",
@@ -27,7 +27,7 @@ const certificationData = [
     issuer: "Prime Minister's Office, Government of Bangladesh",
     regNo: "NSDA/STP/CHIT/2026/042",
     validity: "Valid & Active",
-    image: "/images/nsda-certificate.jpg",
+    image: "/NSDA Certificate.png",
     features: [
       "Registered Skills Training Provider (STP)",
       "National Skills Development Authority framework compliance",

@@ -1,10 +1,26 @@
-import React from 'react'
+import OnlabBanner from '@/components/onlab/OnlabBanner';
+import OnlabCardSection from '@/components/onlab/OnlabCardSection';
+import { dhakaLab } from '@/data/dhakaLabData';
+import React from 'react';
 
-const DhakaLab = () => {
+const DhakaLab = async () => {
+  const dhakaData = dhakaLab;
+
   return (
-   <div className='flex font-bold text-2xl justify-center items-center h-[50vh]'
-    >Dhaka</div>
-  )
-}
+    <main className="w-full min-h-screen bg-slate-50/50 pt-24 sm:pt-28 pb-16 px-4 sm:px-6 lg:px-8 font-sans relative z-0">
+      <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
+        {/* Banner Section */}
+        <section className="w-full">
+          <OnlabBanner />
+        </section>
 
-export default DhakaLab
+        {/* Card Section */}
+        <section className="w-full">
+          <OnlabCardSection data={dhakaData} />
+        </section>
+      </div>
+    </main>
+  );
+};
+
+export default DhakaLab;

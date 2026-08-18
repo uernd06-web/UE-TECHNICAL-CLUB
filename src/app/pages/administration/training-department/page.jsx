@@ -660,6 +660,8 @@ export default function OrganogramPage() {
             <OrgNode label={<MemberNode member={members['rafat-bin-ali']} />}>
               <OrgNode label={<MemberNode member={members['fahim-shahrier']} />} />
               <OrgNode label={<MemberNode member={members['sayed-bin-osman']} />} />
+              <OrgNode label={<MemberNode member={members['ahsanul-nabil']} />} />
+
               <OrgNode label={<MemberNode member={members['nowshad-amin']} />}>
                 <OrgNode label={<MemberNode member={members['fakir-sharif']} />} />
                 <OrgNode label={<MemberNode member={members['zahroul-haque']} />} />
@@ -681,6 +683,8 @@ export default function OrganogramPage() {
               <OrgNode label={<MemberNode member={members['sayed-bin-osman']} />} />
               <OrgNode label={<MemberNode member={members['shakil-ahmed']} />} />
               <OrgNode label={<MemberNode member={members['ratin']} />} />
+              <OrgNode label={<MemberNode member={members['zian-reza']} />} />
+              <OrgNode label={<MemberNode member={members['asif-mahmud']} />} />
             </OrgNode>
           </div>
         </div>
@@ -711,12 +715,13 @@ export default function OrganogramPage() {
                   wrapChildren={true}
                   label={<MemberNode member={members['shakil-ahmed']} />}
                 >
+                  <MemberNode member={members['asif-automation']} />
                   <MemberNode member={members['sobuj']} />
                   <MemberNode member={members['robiul-hasan']} />
                   <MemberNode member={members['ibrahim-khalil']} />
-                  <MemberNode member={members['asif-automation']} />
                   <MemberNode member={members['minar']} />
                   <MemberNode member={members['masud']} />
+                  <MemberNode member={members['asif-hossain']} />
                   <MemberNode member={members['asim']} />
                   <MemberNode member={members['faruk-hossain']} />
                   <MemberNode member={members['nazmul-islam']} />
@@ -807,3 +812,5 @@ export default function OrganogramPage() {
     </div>
   );
 }
+
+

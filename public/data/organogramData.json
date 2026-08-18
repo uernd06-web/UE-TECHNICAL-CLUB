@@ -4,7 +4,7 @@
     "name": "Engr. Sheikh Rafat Bin Ali",
     "role": "Chairman / CEO",
     "image": "/ceo.png",
-    "departments": ["Board of Directors", "Executive Team", "Training Division", "R&D", "Marketing Team"],
+    "departments": ["Board of Directors", "Executive Team", "Training Division", "R&D", "Marketing Team","Advisors"],
     "bio": "Engr. Sheikh Rafat Bin Ali provides strategic leadership, executive governance, and organizational planning across all operations.",
     "description": "Engr. Sheikh Rafat Bin Ali provides strategic leadership, executive governance, and organizational planning across all operations.",
     "main_responsibilities": [
@@ -46,7 +46,21 @@
     "name": "Engr. Nowshad Amin",
     "role": "Chief Advisor",
     "image": "/nowshad-amin-sir.png",
-    "departments": ["Board of Directors"],
+    "departments": ["Advisors"],
+    "bio": "Providing high-level advisory and strategy for institutional advancement.",
+    "description": "Providing high-level advisory and strategy for institutional advancement.",
+    "main_responsibilities": [
+      "Strategic Advisory",
+      "Institutional Advancement",
+      "Executive Governance Assistance"
+    ]
+  },
+  {
+    "id": "ahsanul-nabil",
+    "name": "Dr.Aasim Ullah Nabil",
+    "role": "Chief Advisor",
+    "image": "/nabil-sir.jpeg",
+    "departments": ["Advisors"],
     "bio": "Providing high-level advisory and strategy for institutional advancement.",
     "description": "Providing high-level advisory and strategy for institutional advancement.",
     "main_responsibilities": [
@@ -60,7 +74,7 @@
     "name": "Engr. Zahroul Haque Miah",
     "role": "Chief Operating Officer",
     "image": "/Engr. Zahroul Haque Miah.jpg",
-    "departments": ["Board of Directors", "Executive Team", "Training Division", "R&D", "Marketing Team", "Intern Team"],
+    "departments": ["Advisors", "Executive Team", "Training Division", "R&D", "Marketing Team", "Intern Team"],
     "bio": "Directing operational workflows, branch oversight, and general administration.",
     "description": "Directing operational workflows, branch oversight, and general administration.",
     "main_responsibilities": [
@@ -74,7 +88,7 @@
     "name": "Engr. Fakir Sharif",
     "role": "Designation",
     "image": "/fakir-sir.png",
-    "departments": ["Board of Directors", "R&D"],
+    "departments": ["Advisors", "R&D"],
     "bio": "Key contributor to organizational development and technical advisory.",
     "description": "Key contributor to organizational development and technical advisory.",
     "main_responsibilities": [
@@ -85,9 +99,23 @@
   {
     "id": "asif-mahmud",
     "name": "Engr. Asif Mahmud",
-    "role": "Sr. Service Engineer",
+    "role": "Technical Mentor",
     "image": "/Engr. Asif Mahmud.jpg",
-    "departments": ["Board of Directors", "Executive Team", "R&D"],
+    "departments": ["Advisors", "Executive Team", "R&D"],
+    "bio": "Managing senior technical operations, R&D systems, and service delivery.",
+    "description": "Managing senior technical operations, R&D systems, and service delivery.",
+    "main_responsibilities": [
+      "Senior Technical Operations",
+      "Service Delivery Management",
+      "R&D System Engineering"
+    ]
+  },
+  {
+    "id": "asif-hossain",
+    "name": "Engr. Asif hossain",
+    "role": "Technical Mentor",
+    "image": "/ASIF HOSSAIN.jpg",
+    "departments": [ "Executive Team"],
     "bio": "Managing senior technical operations, R&D systems, and service delivery.",
     "description": "Managing senior technical operations, R&D systems, and service delivery.",
     "main_responsibilities": [
@@ -127,7 +155,7 @@
   {
     "id": "sobuj",
     "name": "Engr. Azizul Hakim Sobuj.",
-    "role": "Assistant Engineer",
+    "role": "Technical Mentor",
     "image": "/sobuj.jpg",
     "departments": ["Training Division"],
     "bio": "Managing Gazipur branch training operations and administrative activities.",
@@ -141,7 +169,7 @@
   {
     "id": "asif-automation",
     "name": "Engr. Asif",
-    "role": "Automation Mentor",
+    "role": "Technical Mentor",
     "image": "/Engr. Asif Mahmud.jpg",
     "departments": ["Training Division"],
     "bio": "Instructing industrial automation, mentorship, and practical training.",
@@ -155,7 +183,7 @@
   {
     "id": "robiul-hasan",
     "name": "Engr. Robiul Hasan Robi",
-    "role": "SCADA Mentor",
+    "role": "Technical Mentor",
     "image": "/mentors/Engr. Robiul Hasan Robi.jpg",
     "departments": ["Training Division"],
     "bio": "Specialist mentor in SCADA systems and industrial control systems.",
@@ -169,7 +197,7 @@
   {
     "id": "ibrahim-khalil",
     "name": "Engr. Md Ibrahim Khalil",
-    "role": "BMS Mentor / R&D BMS",
+    "role": "Technical Mentor",
     "image": "/mentors/Engr Ibrahim.jpg",
     "departments": ["Training Division", "R&D"],
     "bio": "Building Management Systems (BMS) trainer and research associate.",
@@ -183,7 +211,7 @@
   {
     "id": "luthfar-rahman",
     "name": "Engr. Luthfar Rahman",
-    "role": "Solar & Power Mentor",
+    "role": "Technical Mentor",
     "image": "/members/luthfar.png",
     "departments": ["Training Division"],
     "bio": "Mentoring students in solar technology, power electronics, and renewable energy.",
@@ -197,7 +225,7 @@
   {
     "id": "sahadat",
     "name": "Engr. Md Sahadat Hosen",
-    "role": "Automation Mentor",
+    "role": "Technical Mentor",
     "image": "/mentors/Engr. Md Sahadat Hosen.jpg",
     "departments": ["Training Division"],
     "bio": "Conducting industrial automation and control panel design modules.",
@@ -211,7 +239,7 @@
   {
     "id": "mostafa",
     "name": "Eng. Mostafa",
-    "role": "Automation Mentor",
+    "role": "Technical Mentor",
     "image": "/mustafa.jpeg",
     "departments": ["Training Division"],
     "bio": "Mentoring hardware engineering and automation applications.",
@@ -267,7 +295,7 @@
   {
     "id": "faruk-hossain",
     "name": "Engr. Faruk Hossain",
-    "role": "R&D Automation",
+    "role": "Technical Mentor",
     "image": "/mentors/Faruk Sir.png",
     "departments": ["R&D"],
     "bio": "Researching hardware-software automation workflows.",
@@ -281,7 +309,7 @@
   {
     "id": "bayzid",
     "name": "Engr. Md. Bayezid Ahmed",
-    "role": "R&D Automation, Hardware Support",
+    "role": "Technical Mentor",
     "image": "/mentors/BAYZID.jpg",
     "departments": ["R&D"],
     "bio": "Hardware integration, circuit troubleshooting, and embedded systems.",
@@ -421,15 +449,15 @@
   {
     "id": "bijoy-das",
     "name": "Bijoy Das",
-    "role": "Intern",
+    "role": "Technical Mentor",
     "image": "/Bijoy Das.jpg",
     "departments": ["Training Division"],
-    "bio": "Technical intern learning and assisting across ongoing engineering projects.",
-    "description": "Technical intern learning and assisting across ongoing engineering projects.",
+    "bio": "Hardware integration, circuit troubleshooting, and embedded systems.",
+    "description": "Hardware integration, circuit troubleshooting, and embedded systems.",
     "main_responsibilities": [
-      "Engineering Project Support",
-      "Training Division Assistance",
-      "Technical Learning & Execution"
+      "Hardware Integration",
+      "Circuit Troubleshooting",
+      "Embedded Systems Support"
     ]
   },
   {

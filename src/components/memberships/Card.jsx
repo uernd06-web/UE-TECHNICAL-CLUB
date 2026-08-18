@@ -47,7 +47,7 @@ const Card = ({ data }) => {
           Explore Details
         </span>
         
-        <Link href={'/pages/programs/admission'}>
+        <Link href={`/pages/programs/memberships/${data.id}`}>
         <div className="w-8 h-8 rounded-full bg-red-50 text-red-600 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
           <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
         </div>
