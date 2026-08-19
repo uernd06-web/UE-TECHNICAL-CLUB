@@ -10,7 +10,7 @@ const platforms = [
     description:
       "Industrial automation, PLC, HMI, SCADA, BMS, solar, power-system and EPC engineering solutions.",
     linkText: "Explore company",
-    href: "/energy-control",
+    href: "#",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const platforms = [
     description:
       "A digital innovation and professional-development platform connecting engineering learners, projects and industry opportunities.",
     linkText: "Explore NGX",
-    href: "/community/ngx",
+    href: "#",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const platforms = [
     description:
       "Engineering books, technical notes, guides and learning resources designed to support structured professional development.",
     linkText: "View publication platform",
-    href: "/publication",
+    href: "#",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const platforms = [
     description:
       "Membership-based training, mentoring, practical projects and long-term support for emerging and professional engineers.",
     linkText: "Explore UE Club",
-    href: "/ue-club",
+    href: "#",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function EcosystemSection() {
               </p>
 
               <Link
-                href="/about"
+                href={'#'}
                 className="mt-7 inline-flex w-fit items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-sm font-extrabold text-black transition duration-200 hover:-translate-y-0.5 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               >
                 Visit Mother Company

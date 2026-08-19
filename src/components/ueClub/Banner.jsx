@@ -14,18 +14,19 @@ const Banner = () => {
           priority
           className="object-cover object-center"
         />
-        {/* Semi-transparent dark overlay to make text readable */}
-        <div className="absolute inset-0  z-1"></div>
+        
+        {/* Dark Overlay - Left to right and top to bottom gradient for clear text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 z-1" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-6 md:px-10 lg:px-16 text-white">
         
         {/* Top Practical Engineering Education Label */}
-        <div className="mb-6 flex items-center gap-3 bg-black/30 backdrop-blur-sm border border-white/20 w-max px-4 py-1.5 rounded-full">
+        <div className="mb-6 flex items-center gap-3 bg-black/40 backdrop-blur-md border border-white/20 w-max px-4 py-1.5 rounded-full">
           <span className="h-2.5 w-2.5 rounded-full bg-red-600 inline-block"></span>
           <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-white/90">
-           UE Training Department
+            UE Training Department
           </span>
         </div>
 
@@ -38,22 +39,22 @@ const Banner = () => {
 
         {/* Subheading/Paragraph */}
         <p className="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed mb-10 max-w-2xl font-normal">
-         We do not only sell courses. We build lifelong engineers through a structured professional club, practical learning and engineering community system.
+          We do not only sell courses. We build lifelong engineers through a structured professional club, practical learning and engineering community system.
         </p>
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4">
-         <Link href={'/pages/programs/memberships'}>
-          <button className="bg-white text-black font-bold text-sm px-8 py-3.5 rounded-xl hover:bg-red-500 transition duration-200 flex items-center gap-2.5 shadow-lg cursor-pointer">
-            Explore Memberships <span className="text-lg">→</span>
-          </button>
-         </Link>
+          <Link href={'/pages/programs/memberships'}>
+            <button className="bg-white text-black font-bold text-sm px-8 py-3.5 rounded-xl hover:bg-red-600 hover:text-white transition duration-200 flex items-center gap-2.5 shadow-lg cursor-pointer">
+              Explore Memberships <span className="text-lg">→</span>
+            </button>
+          </Link>
           
-        <Link href={'/pages/programs/admission'}>
-          <button className="bg-transparent text-white font-bold text-sm px-8 py-3.5 rounded-xl border border-white/20 hover:bg-white hover:text-black transition duration-200 backdrop-blur-sm cursor-pointer">
-           Click to join UE-club
-          </button>
-        </Link>
+          <Link href={'/pages/programs/admission'}>
+            <button className="bg-transparent text-white font-bold text-sm px-8 py-3.5 rounded-xl border border-white/20 hover:bg-white hover:text-black transition duration-200 backdrop-blur-sm cursor-pointer">
+              Click to join UE-club
+            </button>
+          </Link>
         </div>
       </div>
     </section>

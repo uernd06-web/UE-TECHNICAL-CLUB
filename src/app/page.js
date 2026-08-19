@@ -4,7 +4,7 @@ import LearningGallery from "@/components/HomePage/LearningGallery";
 
 
 export const metadata = {
-  title: "home",
+  title: "Home page",
   description: "",
 };
 

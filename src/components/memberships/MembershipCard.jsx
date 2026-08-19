@@ -5,9 +5,11 @@ import Link from "next/link";
 import ScrollAnimation from "../ScrollAnimation";
 import { membershipsData } from "@/data/memberships";
 
+
+
 const MembershipCard = () => {
   const memberData = membershipsData;
-  
+
   return (
     <section className="w-full bg-slate-50/50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="w-full max-w-7xl mx-auto space-y-8">

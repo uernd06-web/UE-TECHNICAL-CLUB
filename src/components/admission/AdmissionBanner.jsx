@@ -7,7 +7,7 @@ const AdmissionBanner = () => {
   const bgImage = "/AUTOMATION.png"; 
 
   return (
-    <section className="relative w-full min-h-[380px] sm:min-h-[420px] bg-slate-950 text-white overflow-hidden flex items-center py-12 px-4 sm:px-8 lg:px-16 font-sans">
+    <section className="relative pt-30 w-full min-h-[380px] sm:min-h-[420px] bg-slate-950 text-white overflow-hidden flex items-center py-12 px-4 sm:px-8 lg:px-16 font-sans">
       
       {/* 1. Background Image Layer (Optional) */}
       {bgImage && (

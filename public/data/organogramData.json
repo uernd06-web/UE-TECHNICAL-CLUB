@@ -293,6 +293,34 @@
     ]
   },
   {
+  "id": "jakerul-islam",
+  "name": "Md. Jakerul Islam",
+  "role": "Frontend Web Developer",
+  "image": "/jakerul-islam.png",
+  "departments": ["R&D"],
+  "bio": "Building responsive, user-centric web applications with React, Next.js, and modern frontend technologies.",
+  "description": "Specializing in crafting dynamic web interfaces, modern UI/UX design integration, and scalable full-stack web solutions.",
+  "main_responsibilities": [
+    "Frontend Architecture & UI Development",
+    "API Integration & Performance Optimization",
+    "Cross-Browser Responsive Design Implementation"
+  ]
+},
+  {
+  "id": "jeba-shajida",
+  "name": "Engr. Jeba Shajida",
+  "role": "Research Assistant (Software Engineering)",
+  "image": "/jeba-shajida.jpg",
+  "departments": ["R&D"],
+  "bio": "Conducting research in software engineering methodologies, system architecture, and modern software design patterns.",
+  "description": "Focusing on software engineering research, data analysis, architectural design, and developing experimental software prototypes.",
+  "main_responsibilities": [
+    "Software Architecture & Empirical Research",
+    "R&D Prototype Development & Testing",
+    "Data Analysis & Technical Documentation"
+  ]
+},
+  {
     "id": "faruk-hossain",
     "name": "Engr. Faruk Hossain",
     "role": "Technical Mentor",
