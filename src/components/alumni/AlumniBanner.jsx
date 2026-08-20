@@ -49,11 +49,11 @@ export default function AlumniBanner() {
         {/* ৪. কুইক স্ট্যাটস (Quick Stats) */}
         <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 text-center w-full max-w-3xl">
           <div>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-white">500+</h3>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white">10000+</h3>
             <p className="text-xs md:text-sm text-gray-400 mt-1">Active Alumni</p>
           </div>
           <div>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-white">50+</h3>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white">200+</h3>
             <p className="text-xs md:text-sm text-gray-400 mt-1">Partner Companies</p>
           </div>
           <div className="col-span-2 sm:col-span-1">

@@ -5,7 +5,7 @@ export const gazipurLab=[
     "category": "INDUSTRIAL AUTOMATION",
     "title": "Automation Lab",
     "description": "Master industrial PLC programming, motor control setups, relay logic, and automated sequence workflows.",
-    "image": "/AUTOMATION.png"
+    "image": "/automation lab g.jpeg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ export const gazipurLab=[
     "category": "SUPERVISORY CONTROL",
     "title": "SCADA Lab",
     "description": "Build industrial visualization, dynamic HMI screens, alarm logging, and real-time supervisory data monitoring.",
-    "image": "/SCADA.png"
+    "image": "/lab/scada lab.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ export const gazipurLab=[
     "category": "RENEWABLE ENERGY",
     "title": "Solar Lab",
     "description": "Explore solar PV array design, inverter configurations, system sizing, and off-grid renewable energy integration.",
-    "image": "/SOLAR.png"
+    "image": "/lab/solar.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@ export const gazipurLab=[
     "category": "POWER SYSTEMS",
     "title": "Power Lab",
     "description": "Learn power system design, substation automation, switchgear operations, and ETAP electrical simulation modeling.",
-    "image": "/POWER.png"
+    "image": "/power lab g.jpeg"
   },
   {
     "id": 5,
@@ -37,6 +37,6 @@ export const gazipurLab=[
     "category": "PROCESS AUTOMATION",
     "title": "Control Process Lab",
     "description": "Hands-on experience with process sensors, closed-loop PID controllers, actuators, and pneumatic control loops.",
-    "image": "/INDUSTRIAL.png"
+    "image": "/lab/solar.jpg"
   }
 ]

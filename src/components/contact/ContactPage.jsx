@@ -1,5 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import { 
+  FaMapMarkerAlt, 
+  FaEnvelope, 
+  FaPhoneAlt, 
+  FaPaperPlane, 
+  FaGraduationCap, 
+  FaMicrochip, 
+  FaProjectDiagram 
+} from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -22,111 +31,156 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans pt-28 pb-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pt-28 pb-16 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto space-y-12">
         
-        {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 bg-red-50 border border-red-200 px-4 py-1.5 rounded-full mb-4">
-            <span className="h-2 w-2 rounded-full bg-[#9B1C1C] animate-pulse"></span>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#9B1C1C]">
-              Get In Touch
+        {/* Header Hero Section */}
+        <div className="relative overflow-hidden bg-gradient-to-r from-[#801414] via-[#9B1C1C] to-[#C81E1E] text-white rounded-3xl p-8 md:p-12 shadow-xl shadow-red-900/10">
+          <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+          <div className="relative z-10 max-w-3xl space-y-4">
+            <span className="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full">
+              Get In Touch With Us
             </span>
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight">
+              Let&apos;s Build Something Great Together
+            </h1>
+            <p className="text-red-100 text-sm md:text-base leading-relaxed">
+              Have questions about our engineering programs, R&D innovations, or project consultations? Reach out to our team below.
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-gray-900">
-            Contact <span className="text-[#9B1C1C]">Ulterior Engineering</span>
-          </h1>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Have questions about our engineering programs, admissions, or community? Send us a message and our team will get back to you shortly.
-          </p>
         </div>
 
-        {/* Main Grid Section */}
+        {/* Main Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
-          {/* Left Column: Contact Info */}
+          {/* Left Side: Direct Contact Details & Departments */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 border-b border-gray-100 pb-3">
-                Contact Information
-              </h3>
+            
+            {/* Location Card */}
+            <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex items-start gap-4">
+              <div className="p-3.5 bg-red-50 text-[#9B1C1C] rounded-2xl border border-red-100 shrink-0">
+                <FaMapMarkerAlt className="text-2xl" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900 text-base mb-1">Head Office Location</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  2nd floor, Alook Tower, 47/1 Shaheed Tajuddin Ahmed Ave, Dhaka 1212
+                </p>
+              </div>
+            </div>
 
-              <div className="space-y-6">
-                {/* Location */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-red-50 border border-red-100 rounded-xl text-[#9B1C1C] shrink-0">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
+            {/* Email Contact Card */}
+            <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300">
+              <div className="flex items-center gap-3 border-b border-slate-100 pb-4 mb-4">
+                <div className="p-3 bg-red-50 text-[#9B1C1C] rounded-xl border border-red-100">
+                  <FaEnvelope className="text-lg" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-base">Email Support</h3>
+              </div>
+
+              <div className="space-y-3.5 text-sm">
+                <div className="p-3 bg-slate-50 rounded-xl hover:bg-red-50/50 transition">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-[#9B1C1C] mb-0.5">
+                    <FaGraduationCap /> Training Query
                   </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900">Head Office Location</h4>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Ulterior Engineering Group,<br />
-                      Chittagong / Dhaka, Bangladesh
-                    </p>
-                  </div>
+                  <a href="mailto:training@ulteriorengineering.com" className="font-medium text-slate-700 hover:text-[#9B1C1C]">
+                    training@ulteriorengineering.com
+                  </a>
                 </div>
 
-                {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-red-50 border border-red-100 rounded-xl text-[#9B1C1C] shrink-0">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
+                <div className="p-3 bg-slate-50 rounded-xl hover:bg-red-50/50 transition">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-[#9B1C1C] mb-0.5">
+                    <FaMicrochip /> Research & Development (R&D)
                   </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900">Email Us</h4>
-                    <p className="text-sm text-gray-600 mt-1">info@ulteriorengineering.com</p>
-                    <p className="text-sm text-gray-600">admission@ulteriorengineering.com</p>
-                  </div>
+                  <a href="mailto:rnd@ulteriorengineering.com" className="font-medium text-slate-700 hover:text-[#9B1C1C]">
+                    
+                  </a>
                 </div>
 
-                {/* Phone */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-red-50 border border-red-100 rounded-xl text-[#9B1C1C] shrink-0">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
+                <div className="p-3 bg-slate-50 rounded-xl hover:bg-red-50/50 transition">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-[#9B1C1C] mb-0.5">
+                    <FaProjectDiagram /> Project Inquiries
                   </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900">Call For Support</h4>
-                    <p className="text-sm text-gray-600 mt-1">+880 1800-000000</p>
-                    <p className="text-xs text-gray-500 mt-0.5">Sat - Thu: 9:00 AM - 7:00 PM</p>
-                  </div>
+                  <a href="mailto:technicalsolarue@gmail.com" className="font-medium text-slate-700 hover:text-[#9B1C1C]">
+                   admin@ulteriorengineering.com
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Red Highlight Box */}
-            <div className="bg-[#9B1C1C] rounded-2xl p-6 text-white shadow-md">
-              <h4 className="font-bold text-base mb-2">Looking for Admission?</h4>
-              <p className="text-xs text-red-100 leading-relaxed mb-4">
-                Explore our certification programs and join the next generation engineering network directly.
-              </p>
+            {/* Phone Hotline Card */}
+            <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300">
+              <div className="flex items-center gap-3 border-b border-slate-100 pb-4 mb-4">
+                <div className="p-3 bg-red-50 text-[#9B1C1C] rounded-xl border border-red-100">
+                  <FaPhoneAlt className="text-lg" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-base">Call For Support</h3>
+              </div>
+
+              <div className="space-y-4 text-sm">
+                {/* Training */}
+                <div className="border-l-2 border-[#9B1C1C] pl-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Training Dept</p>
+                  <p className="text-slate-800 font-semibold">
+                    01672747135 <span className="text-xs font-normal text-slate-500">(Engr. Sayed Bin Osman)</span>
+                  </p>
+                  <p className="text-slate-800 font-semibold">
+                    01901372972 <span className="text-xs font-normal text-slate-500">(Engr. Shakil)</span>
+                  </p>
+                  <p className="text-slate-800 font-semibold">
+                    01901372975 <span className="text-xs font-normal text-slate-500">(Engr. Azizul Hakim Sobuj)</span>
+                  </p>
+                </div>
+
+                {/* R&D */}
+                <div className="border-l-2 border-[#9B1C1C] pl-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">R&D Dept</p>
+                  <p className="text-slate-800 font-semibold">
+                    01700000000 <span className="text-xs font-normal text-slate-500">(Engr. S.M. Zian Reza)</span>
+                  </p>
+                </div>
+
+                {/* Project */}
+                <div className="border-l-2 border-[#9B1C1C] pl-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Project Dept</p>
+                  <p className="text-slate-800 font-semibold">
+                    01856897987 <span className="text-xs font-normal text-slate-500">(Engr. Asif Mahmud)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Box */}
+            <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 shadow-md border border-slate-700 flex items-center justify-between">
+              <div>
+                <h4 className="font-bold text-base">Ready to start?</h4>
+                <p className="text-xs text-slate-400">Join our engineering certification programs.</p>
+              </div>
               <a
                 href="/pages/programs/admission"
-                className="inline-block bg-white text-[#9B1C1C] font-bold text-xs uppercase px-4 py-2.5 rounded-lg hover:bg-gray-100 transition shadow-sm"
+                className="bg-[#9B1C1C] hover:bg-red-700 text-white font-semibold text-xs px-4 py-2.5 rounded-xl transition shadow-sm"
               >
-                Apply For Admission →
+                Apply Now
               </a>
             </div>
+
           </div>
 
-          {/* Right Column: Contact Form */}
+          {/* Right Side: Message Form */}
           <div className="lg:col-span-7">
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Send Us A Message</h3>
-              <p className="text-xs md:text-sm text-gray-500 mb-8">
-                Fill out the form below and our team will respond within 24 hours.
-              </p>
+            <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-sm">
+              <div className="mb-8">
+                <h2 className="text-2xl font-black text-slate-900 mb-1">Send Us a Message</h2>
+                <p className="text-sm text-slate-500">
+                  Fill out the form below and our team will respond within 24 hours.
+                </p>
+              </div>
 
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  {/* Name Input */}
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {/* Name */}
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                       Your Name *
                     </label>
                     <input
@@ -135,14 +189,14 @@ const ContactPage = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Enter your full name"
-                      className="w-full bg-gray-50 border border-gray-300 focus:border-[#9B1C1C] focus:bg-white focus:ring-1 focus:ring-[#9B1C1C] rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition"
+                      placeholder="e.g. John Doe"
+                      className="w-full bg-slate-50/50 border border-slate-200 focus:border-[#9B1C1C] focus:bg-white focus:ring-4 focus:ring-red-500/10 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 outline-none transition"
                     />
                   </div>
 
-                  {/* Phone Input */}
+                  {/* Phone */}
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                       Phone Number
                     </label>
                     <input
@@ -150,15 +204,15 @@ const ContactPage = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+880 1700-000000"
-                      className="w-full bg-gray-50 border border-gray-300 focus:border-[#9B1C1C] focus:bg-white focus:ring-1 focus:ring-[#9B1C1C] rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition"
+                      placeholder="017XXXXXXXX"
+                      className="w-full bg-slate-50/50 border border-slate-200 focus:border-[#9B1C1C] focus:bg-white focus:ring-4 focus:ring-red-500/10 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 outline-none transition"
                     />
                   </div>
                 </div>
 
-                {/* Email Input */}
+                {/* Email */}
                 <div>
-                  <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                     Email Address *
                   </label>
                   <input
@@ -167,14 +221,14 @@ const ContactPage = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="example@domain.com"
-                    className="w-full bg-gray-50 border border-gray-300 focus:border-[#9B1C1C] focus:bg-white focus:ring-1 focus:ring-[#9B1C1C] rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition"
+                    placeholder="example@gmail.com"
+                    className="w-full bg-slate-50/50 border border-slate-200 focus:border-[#9B1C1C] focus:bg-white focus:ring-4 focus:ring-red-500/10 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 outline-none transition"
                   />
                 </div>
 
-                {/* Subject Input */}
+                {/* Subject */}
                 <div>
-                  <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                     Subject *
                   </label>
                   <input
@@ -183,14 +237,14 @@ const ContactPage = () => {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="Admission Query / Program Details"
-                    className="w-full bg-gray-50 border border-gray-300 focus:border-[#9B1C1C] focus:bg-white focus:ring-1 focus:ring-[#9B1C1C] rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition"
+                    placeholder="How can we help you?"
+                    className="w-full bg-slate-50/50 border border-slate-200 focus:border-[#9B1C1C] focus:bg-white focus:ring-4 focus:ring-red-500/10 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 outline-none transition"
                   />
                 </div>
 
-                {/* Message Input */}
+                {/* Message */}
                 <div>
-                  <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                     Message *
                   </label>
                   <textarea
@@ -199,17 +253,17 @@ const ContactPage = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Write your message here..."
-                    className="w-full bg-gray-50 border border-gray-300 focus:border-[#9B1C1C] focus:bg-white focus:ring-1 focus:ring-[#9B1C1C] rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition resize-none"
+                    placeholder="Write your message details..."
+                    className="w-full bg-slate-50/50 border border-slate-200 focus:border-[#9B1C1C] focus:bg-white focus:ring-4 focus:ring-red-500/10 rounded-xl px-4 py-3.5 text-sm text-slate-900 placeholder-slate-400 outline-none transition resize-none"
                   ></textarea>
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-[#9B1C1C] hover:bg-red-800 text-white font-bold text-sm uppercase tracking-wider py-4 rounded-xl transition duration-300 shadow-md cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full bg-[#9B1C1C] hover:bg-red-700 text-white font-bold text-sm uppercase tracking-wider py-4 rounded-xl transition-all duration-300 shadow-lg shadow-red-900/20 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  Send Message <span>→</span>
+                  <FaPaperPlane className="text-xs" /> Send Message
                 </button>
               </form>
             </div>

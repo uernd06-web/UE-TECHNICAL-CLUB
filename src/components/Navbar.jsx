@@ -240,7 +240,7 @@ const Navbar = () => {
           <div className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-center pointer-events-none z-10">
             <Link href="/" className="pointer-events-auto flex items-center gap-2 py-1">
               <Image
-                src={isScrolled ? "/ue-logo2.png" : "/transparent-logo-2.png"}
+                src={'/UE Black PNG.png'}
                 alt="UE Logo"
                 width={240}
                 height={80}

@@ -28,6 +28,20 @@
     ]
   },
   {
+  "id": "dipok-raj",
+  "name": "Engr. Dipok Raj Bongshi",
+  "role": "Sales and Service Engineer",
+  "image": "/engr.dipok raj bongshi.jpg",
+  "departments": ["Project Division"],
+  "bio": "Driving client engagement, technical sales strategy, and end-to-end service support for project implementations.",
+  "description": "Providing technical expertise in product sales, client support, equipment maintenance, and managing service execution within project timelines.",
+  "main_responsibilities": [
+    "Technical Sales & Client Relationship Management",
+    "On-site Installation, Troubleshooting & Maintenance",
+    "Project Service Execution & Technical Support"
+  ]
+},
+  {
     "id": "sayed-bin-osman",
     "name": "Engr. Sayed Bin Osman",
     "role": "Chief Research & Development Officer",
@@ -101,7 +115,7 @@
     "name": "Engr. Asif Mahmud",
     "role": "Technical Mentor",
     "image": "/Engr. Asif Mahmud.jpg",
-    "departments": ["Advisors", "Executive Team", "R&D"],
+    "departments": ["Advisors", "Executive Team","Project Division"],
     "bio": "Managing senior technical operations, R&D systems, and service delivery.",
     "description": "Managing senior technical operations, R&D systems, and service delivery.",
     "main_responsibilities": [
@@ -339,7 +353,7 @@
     "name": "Engr. Md. Bayezid Ahmed",
     "role": "Technical Mentor",
     "image": "/mentors/BAYZID.jpg",
-    "departments": ["R&D"],
+    "departments": ["R&D","Project Division"],
     "bio": "Hardware integration, circuit troubleshooting, and embedded systems.",
     "description": "Hardware integration, circuit troubleshooting, and embedded systems.",
     "main_responsibilities": [
@@ -409,7 +423,7 @@
     "name": "Engr. Sara",
     "role": "Marketing Team",
     "image": "/Engr. Samia Hossain Sara.jpg",
-    "departments": ["Marketing Team"],
+    "departments": ["Marketing Team", "Project Division"],
     "bio": "Market research, user acquisition, and branding operations.",
     "description": "Market research, user acquisition, and branding operations.",
     "main_responsibilities": [

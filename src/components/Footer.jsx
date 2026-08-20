@@ -31,7 +31,7 @@ const Footer = () => {
           <Link href="/" className="inline-block">
             <div className="relative w-20 h-20 md:w-24 md:h-24">
               <Image
-                src="/ue-logo2.png"
+                src="/UE White JPG.png"
                 alt="UE Logo"
                 fill
                 sizes="(max-width: 768px) 80px, 96px"

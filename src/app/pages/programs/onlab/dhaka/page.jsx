@@ -1,3 +1,4 @@
+import DhakaLabSection from '@/components/onlab/Dhaka lab/DhakaLabSection';
 import OnlabBanner from '@/components/onlab/OnlabBanner';
 import OnlabCardSection from '@/components/onlab/OnlabCardSection';
 import { dhakaLab } from '@/data/dhakaLabData';
@@ -16,7 +17,7 @@ const DhakaLab = async () => {
 
         {/* Card Section */}
         <section className="w-full">
-          <OnlabCardSection data={dhakaData} />
+          <DhakaLabSection dhakaData={dhakaData}></DhakaLabSection>
         </section>
       </div>
     </main>

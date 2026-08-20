@@ -1,5 +1,6 @@
+import GazipurLabSection from '@/components/onlab/Gazipur lab/GazipurLabSection';
 import OnlabBanner from '@/components/onlab/OnlabBanner';
-import OnlabCardSection from '@/components/onlab/OnlabCardSection';
+
 import { gazipurLab } from '@/data/gazipurLabData';
 import React from 'react';
 
@@ -16,7 +17,7 @@ const GazipurLab = async () => {
 
         {/* Card Section */}
         <section className="w-full">
-          <OnlabCardSection data={gazipurData} />
+          <GazipurLabSection gazipurData={gazipurData}></GazipurLabSection>
         </section>
       </div>
     </main>

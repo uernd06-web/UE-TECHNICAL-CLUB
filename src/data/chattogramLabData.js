@@ -1,4 +1,4 @@
-export const dhakaLab = [
+export const chattogramLab = [
   {
     "id": 1,
     "labBadge": "LAB 01",
