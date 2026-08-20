@@ -28,7 +28,7 @@ const ChattogramCard = ({ lab }) => {
           )}
 
           {/* Bottom Right Arrow Button */}
-          <Link href={`/pages/programs/onlab/dhaka/${lab.id}`} className="absolute bottom-3.5 right-3.5 z-10">
+          <Link href={`/pages/programs/onlab/chattogram/${lab.id}`} className="absolute bottom-3.5 right-3.5 z-10">
             <div className="w-9 h-9 rounded-full bg-red-700 text-white flex items-center justify-center shadow-lg group-hover:bg-red-800 group-hover:scale-110 transition-all">
               <ArrowRight className="w-4 h-4 stroke-[2.5]" />
             </div>

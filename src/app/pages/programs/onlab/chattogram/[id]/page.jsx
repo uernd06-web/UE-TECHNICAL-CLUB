@@ -1,3 +1,4 @@
+import { chattogramLab } from '@/data/chattogramLabData';
 import { dhakaLab } from '@/data/dhakaLabData';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,7 +10,7 @@ const ChattogramLabDetails = async ({ params }) => {
   const { id } = await params;
 
   // Find single lab by matching ID
-  const singleLab = dhakaLab.find((dhaka) => String(dhaka.id) === String(id));
+  const singleLab = chattogramLab.find((dhaka) => String(dhaka.id) === String(id));
 
   // Show 404 page if lab is not found
   if (!singleLab) {

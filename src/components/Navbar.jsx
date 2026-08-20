@@ -38,7 +38,8 @@ const Navbar = () => {
         {
           name: "ONLAB",
           description: "Hands-on practical learning",
-          path: "/pages/programs/onlab",
+          // path: "/pages/programs/onlab",
+          path: "#",
           subDropdown: [
             { name: "Dhaka Lab", path: "/pages/programs/onlab/dhaka" },
             { name: "Chattogram Lab", path: "/pages/programs/onlab/chattogram" },

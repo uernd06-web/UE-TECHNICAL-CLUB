@@ -14,7 +14,7 @@ const jsonData= await fs.readFile(filePath, 'utf-8')
 const stories = JSON.parse(jsonData)
 console.log(stories, 'from alumni')
   return (
-    <div>
+    <div className='mb-10'>
 
  <SuccessBanner></SuccessBanner>
       <SuccessSection stories={stories}></SuccessSection>

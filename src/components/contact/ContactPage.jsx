@@ -92,8 +92,8 @@ const ContactPage = () => {
                   <div className="flex items-center gap-2 text-xs font-semibold text-[#9B1C1C] mb-0.5">
                     <FaMicrochip /> Research & Development (R&D)
                   </div>
-                  <a href="mailto:rnd@ulteriorengineering.com" className="font-medium text-slate-700 hover:text-[#9B1C1C]">
-                    
+                  <a href="mailto: ue.rnd.01@gmail.com" className="font-medium text-slate-700 hover:text-[#9B1C1C]">
+                    ue.rnd.01@gmail.com
                   </a>
                 </div>
 
@@ -136,7 +136,7 @@ const ContactPage = () => {
                 <div className="border-l-2 border-[#9B1C1C] pl-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">R&D Dept</p>
                   <p className="text-slate-800 font-semibold">
-                    01700000000 <span className="text-xs font-normal text-slate-500">(Engr. S.M. Zian Reza)</span>
+                    01901372976 <span className="text-xs font-normal text-slate-500">(Engr. S.M. Zian Reza)</span>
                   </p>
                 </div>
 
