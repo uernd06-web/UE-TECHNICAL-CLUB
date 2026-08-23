@@ -71,7 +71,7 @@ const AdmissionForm = () => {
             Admission Inquiry
           </h2>
           <p className="text-xs sm:text-sm text-gray-500 font-medium leading-relaxed pt-1">
-            Complete the form below and the training team can contact you about your selected program.
+            Complete the form below and the training team can contact you about your selected programs.
           </p>
         </div>
 
