@@ -290,10 +290,10 @@ const MembershipsDetails = async ({ params }) => {
                       </div>
                     )}
 
-                    <button className="w-full flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3.5 px-6 font-bold text-white transition-all hover:bg-red-700 active:scale-95 shadow-md shadow-red-600/20">
+                    <Link href={'/pages/programs/admission'} className="w-full flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3.5 px-6 font-bold text-white transition-all hover:bg-red-700 active:scale-95 shadow-md shadow-red-600/20">
                       <span>Enroll Now</span>
                       <ArrowRight className="w-4 h-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
