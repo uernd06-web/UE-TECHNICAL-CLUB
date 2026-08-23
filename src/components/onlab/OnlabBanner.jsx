@@ -15,7 +15,7 @@ const OnlabBanner = () => {
              className="object-cover object-center"
            />
            {/* Semi-transparent dark overlay to make text readable */}
-           <div className="absolute inset-0  z-1"></div>
+           <div className="absolute inset-0 z-[1] bg-black/50"></div>
          </div>
    
          {/* Content Container */}
