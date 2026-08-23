@@ -31,7 +31,7 @@ const galleryData = [
     title: "Equipment review and practical testing protocols.",
     description:
       "Gain direct experience testing industrial electrical panels, PLCs, and automation components.",
-    src: "/room1.jpeg",
+    src: "/lab/bms lab.jpg",
     alt: "Equipment testing",
     thumbnailTitle: "Equipment review and testing",
   },
@@ -41,7 +41,7 @@ const galleryData = [
     title: "Industry-focused exposure for future engineers.",
     description:
       "Bridging the gap between theoretical academic studies and actual factory floor workflows.",
-    src: "/room3.jpeg",
+    src: "/automation lab g.jpeg",
     alt: "Industry exposure",
     thumbnailTitle: "Industry-focused exposure",
   },
@@ -51,7 +51,7 @@ const galleryData = [
     title: "Professional learning space for maximum output.",
     description:
       "Designed specifically to encourage focus, team discussion, and engineering innovation.",
-    src: "/room2.jpeg",
+    src: "/t center1.jpg",
     alt: "Learning space",
     thumbnailTitle: "Professional learning space",
   },

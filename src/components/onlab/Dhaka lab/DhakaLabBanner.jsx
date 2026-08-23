@@ -8,7 +8,7 @@ const DhakaLabBanner = () => {
          {/* Background Image with Dark Overlay */}
          <div className="absolute inset-0 z-0">
            <Image
-             src="/room3.jpeg" // Replace with your actual image filename in public folder
+             src="/room03.jpg" // Replace with your actual image filename in public folder
              alt="Engineering Training Lab"
              fill
              priority
