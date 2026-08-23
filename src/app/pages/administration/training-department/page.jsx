@@ -1,4 +1,5 @@
 import OrganogramTree from '@/components/training-department/OrganogramTree';
+import { organogramList } from '@/data/organogramData';
 import fs from 'fs';
 import path from 'path';
 
@@ -11,12 +12,9 @@ export const metadata={
 
 // সার্ভার সাইডে JSON ডাটা পড়ার ফাংশন
 async function getOrganogramData() {
-  const filePath = path.join(process.cwd(), 'public', 'data', 'organogramData.json');
-  const jsonData = fs.readFileSync(filePath, 'utf8');
-  const data = JSON.parse(jsonData);
-
+ 
   const memberMap = {};
-  data.forEach((m) => {
+  organogramList.forEach((m) => {
     memberMap[m.id] = m;
   });
 
