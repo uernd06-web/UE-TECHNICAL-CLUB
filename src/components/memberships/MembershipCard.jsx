@@ -1,79 +1,105 @@
-import React from "react";
-import Card from "./Card";
-import { ArrowUpRight } from "lucide-react";
+// import Link from "next/link";
+// import Image from "next/image";
+
+// export default function MembershipCard({ membership, alignRight = false }) {
+//   return (
+//     <div className="relative flex items-center w-full">
+//       <Link
+//         href={`/memberships/${membership.id}`}
+//         className="w-full group transition-all duration-300 hover:scale-[1.01]"
+//       >
+//         <div
+//           className={`border-[3px] ${membership.borderColor} rounded-2xl p-4 bg-white shadow-sm flex flex-col sm:flex-row items-center gap-4 relative z-10`}
+//         >
+//           {/* Left Side: Card Image */}
+//           <div className="w-full sm:w-[40%] flex flex-col items-center justify-center">
+//             <div className="relative w-full h-24 sm:h-28 rounded-lg overflow-hidden border border-gray-200 shadow-inner flex items-center justify-center bg-gray-900">
+//               <Image
+//                 src={membership.cardImage}
+//                 alt={membership.title}
+//                 fill
+//                 className="object-cover"
+//               />
+//             </div>
+//             <span className={`${membership.badgeBg} text-white text-xs font-bold px-3 py-1 rounded-md mt-2 tracking-wide uppercase shadow-sm text-center w-full`}>
+//               {membership.title}
+//             </span>
+//           </div>
+
+//           {/* Right Side: Packages List */}
+//           <div className="w-full sm:w-[60%] space-y-2">
+//             {membership.packages.map((pkg, idx) => (
+//               <div
+//                 key={idx}
+//                 className={`border-2 ${membership.borderColor} rounded-xl px-3 py-1.5 text-xs font-semibold flex items-center gap-2.5 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 transition-colors`}
+//               >
+//                 <span className="text-gray-700 text-sm flex-shrink-0">
+//                   {pkg.icon}
+//                 </span>
+//                 <span className="truncate">{pkg.packageName}</span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </Link>
+
+//       {/* Connection Dot for Large Screens */}
+//       <div
+//         className={`hidden lg:block absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full ${membership.dotColor} border-2 border-white shadow-md z-20 ${
+//           alignRight ? "-left-2" : "-right-2"
+//         }`}
+//       />
+//     </div>
+//   );
+// }
+
 import Link from "next/link";
-import ScrollAnimation from "../ScrollAnimation";
-import { membershipsData } from "@/data/memberships";
+import Image from "next/image";
 
-
-
-const MembershipCard = () => {
-  const memberData = membershipsData;
-
+export default function MembershipCard({ membership }) {
   return (
-    <section className="w-full bg-slate-50/50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="w-full max-w-7xl mx-auto space-y-8">
-        
-        {/* Header Section */}
-       <ScrollAnimation delay={0}>
-         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-gray-200/80 pb-6">
-          <div className="space-y-1.5">
-            <span className="text-[11px] font-black uppercase tracking-widest text-red-700 block">
-              MEMBERSHIP TIERS
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 tracking-tight">
-              Choose your engineering pathway
-            </h2>
-            <p className="text-xs sm:text-sm text-gray-500 font-medium pt-0.5">
-              Select a membership card to begin your application.
-            </p>
+    <Link
+      href={`/pages/programs/memberships/${membership.id}`}
+      className="block w-full group transition-all duration-300 hover:scale-[1.01] "
+    >
+      <div
+        className={`border-[3px] ${membership.borderColor} rounded-2xl p-3 sm:p-4 bg-white shadow-md flex flex-col sm:flex-row items-center gap-3.5 relative z-10`}
+      >
+        {/* Left Side: Card Image & Badge */}
+        <div className="w-full sm:w-[40%] flex flex-col items-center justify-center">
+          
+          {/* Aspect-Ratio Container for Perfect Image Fitting */}
+          <div className="relative w-full aspect-[16/9] sm:h-28 rounded-lg overflow-hidden border border-gray-200 bg-gray-900 shadow-inner flex items-center justify-center">
+            <Image
+              src={membership.cardImage}
+              alt={membership.title}
+              fill
+              sizes="(max-width: 640px) 100vw, 40vw"
+              className="object-contain p-1" 
+            />
           </div>
 
-          <div className="shrink-0 pt-2 sm:pt-0">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center gap-1.5 bg-white hover:bg-red-50 text-red-700 border border-red-600 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all cursor-pointer shadow-sm hover:shadow-md"
-            >
-              <span>Official UE Club Page</span>
-              <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
-            </a>
-          </div>
+          {/* Badge Title */}
+          <span className="bg-[#B81D24] text-white text-[11px] sm:text-xs font-bold px-2.5 py-1 rounded mt-2 uppercase text-center w-full tracking-wide">
+            {membership.title}
+          </span>
         </div>
-       </ScrollAnimation>
 
-        {/* Card Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {memberData.map((member, index) => (
-            <ScrollAnimation key={index} delay={index * 0.15}>
-            <Card data={member} />
-          </ScrollAnimation>
+        {/* Right Side: Packages List */}
+        <div className="w-full sm:w-[60%] space-y-1.5">
+          {membership.packages.map((pkg, idx) => (
+            <div
+              key={idx}
+              className={`border ${membership.borderColor} rounded-xl px-3 py-1.5 text-xs font-semibold flex items-center gap-2.5 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 transition-colors`}
+            >
+              <span className="text-gray-700 text-sm flex-shrink-0">
+                {pkg.icon}
+              </span>
+              <span className="truncate">{pkg.packageName}</span>
+            </div>
           ))}
         </div>
-
       </div>
-      <div className="flex mt-6 flex-col sm:flex-row sm:items-end justify-between gap-4  pb-6 bg-base-100 p-4 rounded-xl border border-red-600">
-          <div className="space-y-1.5">
-          
-            <h2 className="text-xl sm:text-2xl md:text-2xl font-black text-gray-950 tracking-tight">
-             Need help choosing a membership?
-            </h2>
-            <p className="text-xs sm:text-sm text-gray-500 font-medium pt-0.5">
-              Contact the training team for guidance.
-            </p>
-          </div>
-
-          <div className="shrink-0 pt-2 sm:pt-0">
-            <Link
-              href={"/pages/contact"}
-              className="inline-flex items-center justify-center gap-1.5 bg-white hover:bg-red-50 text-red-700 border border-red-600 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all cursor-pointer shadow-sm hover:shadow-md"
-            >
-              <span>Talk the training team</span>
-              <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
-            </Link>
-          </div>
-        </div>
-    </section>
+    </Link>
   );
-};
-
-export default MembershipCard;
+}

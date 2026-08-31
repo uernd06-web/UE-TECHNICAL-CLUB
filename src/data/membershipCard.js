@@ -1,0 +1,98 @@
+import { 
+  FaSun, FaDraftingCompass, FaBolt, FaPlug, FaProjectDiagram, 
+  FaCogs, FaRobot, FaWifi, FaBrain, FaBuilding, FaServer, 
+  FaGraduationCap, FaMedal, FaCrosshairs, FaMicrochip, FaPowerOff 
+} from "react-icons/fa";
+
+export const membershipCard = [
+  {
+    id: "industrial",
+    title: "Industrial Membership",
+    cardImage: "/card/Industrial_Membership-card.jpg",
+    borderColor: "border-emerald-600",
+    dotColor: "bg-emerald-500",
+    lineColor: "border-emerald-500",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "Solar PV design", icon: <FaSun /> },
+      { packageName: "AutoCAD professionals", icon: <FaDraftingCompass /> },
+      { packageName: "Power system design High Voltage", icon: <FaBolt /> },
+      { packageName: "Power system design Low Voltage", icon: <FaPlug /> },
+      { packageName: "Solar PV & Power SCADA", icon: <FaProjectDiagram /> },
+    ],
+  },
+  {
+    id: "silver",
+    title: "Silver Membership",
+    cardImage: "/card/Silver-01.png",
+    borderColor: "border-slate-400",
+    dotColor: "bg-slate-300",
+    lineColor: "border-slate-300",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "Industrial SCADA", icon: <FaProjectDiagram /> },
+      { packageName: "Industrial Robotics", icon: <FaRobot /> },
+      { packageName: "Solar & Power SCADA", icon: <FaBolt /> },
+      { packageName: "Process SCADA", icon: <FaCogs /> },
+      { packageName: "RTU SCADA", icon: <FaServer /> },
+      { packageName: "IIoT", icon: <FaWifi /> },
+    ],
+  },
+  {
+    id: "elite",
+    title: "Elite Membership",
+    cardImage: "/card/Elite-01.png",
+    borderColor: "border-amber-400",
+    dotColor: "bg-amber-400",
+    lineColor: "border-amber-400",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "GCAE", icon: <FaGraduationCap /> },
+      { packageName: "NGX", icon: <FaMedal /> },
+    ],
+  },
+  {
+    id: "bronze",
+    title: "Bronze Membership",
+    cardImage: "/card/Bronze-01.png",
+    borderColor: "border-amber-700",
+    dotColor: "bg-amber-700",
+    lineColor: "border-amber-700",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "Industrial Automation Pro", icon: <FaRobot /> },
+      { packageName: "Industrial SCADA", icon: <FaProjectDiagram /> },
+      { packageName: "Codesys", icon: <FaMicrochip /> },
+    ],
+  },
+  {
+    id: "gold",
+    title: "Gold Membership",
+    cardImage: "/card/Gold-01.png",
+    borderColor: "border-yellow-500",
+    dotColor: "bg-yellow-500",
+    lineColor: "border-yellow-500",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "AI Automation", icon: <FaBrain /> },
+      { packageName: "BMS", icon: <FaBuilding /> },
+      { packageName: "DCS", icon: <FaServer /> },
+      { packageName: "Bronze Card", icon: <FaMedal /> },
+      { packageName: "Silver Card", icon: <FaMedal /> },
+    ],
+  },
+  {
+    id: "vip",
+    title: "VIP Membership",
+    cardImage: "/card/vip-01.png",
+    borderColor: "border-slate-800",
+    dotColor: "bg-slate-800",
+    lineColor: "border-slate-800",
+    badgeBg: "bg-red-600",
+    packages: [
+      { packageName: "MISSION-121", icon: <FaCrosshairs /> },
+      { packageName: "NGX", icon: <FaMedal /> },
+      { packageName: "UE Energy Control", icon: <FaPowerOff /> },
+    ],
+  },
+];

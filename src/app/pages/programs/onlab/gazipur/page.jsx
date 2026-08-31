@@ -3,7 +3,10 @@ import OnlabBanner from '@/components/onlab/OnlabBanner';
 
 import { gazipurLab } from '@/data/gazipurLabData';
 import React from 'react';
-
+export const metadata={
+  title:'Gazipur lab | ulterior engineering',
+  description:''
+}
 const GazipurLab = async () => {
   const gazipurData = gazipurLab;
 

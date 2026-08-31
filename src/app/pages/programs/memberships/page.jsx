@@ -1,6 +1,6 @@
 import DemoCertificate from '@/components/memberships/DemoCertificate'
 import FeaturedCourses from '@/components/memberships/FeaturedCourses'
-import MembershipCard from '@/components/memberships/MembershipCard'
+import MembershipSection from '@/components/memberships/MembershipSection'
 import MembershipsHero from '@/components/memberships/MembershipsHero'
 import ReferralBenefits from '@/components/memberships/ReferralBenefits'
 import ReferralMembership from '@/components/memberships/ReferralMembership'
@@ -19,7 +19,7 @@ const MembershipsPage = () => {
   return (
    <div>
     <MembershipsHero></MembershipsHero>
-    <MembershipCard></MembershipCard>
+    <MembershipSection></MembershipSection>
     <ReferralMembership></ReferralMembership>
     <ReferralBenefits></ReferralBenefits>
     <FeaturedCourses></FeaturedCourses>

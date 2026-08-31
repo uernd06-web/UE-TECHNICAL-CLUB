@@ -3,7 +3,10 @@ import OnlabBanner from '@/components/onlab/OnlabBanner';
 import OnlabCardSection from '@/components/onlab/OnlabCardSection';
 import { dhakaLab } from '@/data/dhakaLabData';
 import React from 'react';
-
+export const metadata={
+  title:'Dhaka lab | ulterior engineering',
+  description:''
+}
 const DhakaLab = async () => {
   const dhakaData = dhakaLab;
 

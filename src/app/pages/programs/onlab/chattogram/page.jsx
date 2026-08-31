@@ -3,6 +3,10 @@ import ChattogramLabSection from '@/components/onlab/Chattogram lab/ChattogramLa
 import OnlabBanner from '@/components/onlab/OnlabBanner';
 
 import { chattogramLab } from '@/data/chattogramLabData';
+export const metadata={
+  title:'chattogram lab | ulterior engineering',
+  description:''
+}
 
 import React from 'react';
 
